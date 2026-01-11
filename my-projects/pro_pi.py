@@ -141,7 +141,7 @@ def game(balance):
     import time
     for i in range (3,0,-1):
         print(i)
-        time.sleep(1)
+        time.sleep(2)
     print("\n\n----- SUMMARY -----")
     print(f"Deposited: ${balance}, Betting on {num_lines} lines.")
     print(f"\nYou are betting ${bet_amount} on {num_lines} lines. Total bet is: ${total_bet}")

@@ -1,4 +1,5 @@
 import random
+import time
 print(" ---- HELLO! WELCOME TO THE NUMBER GUESSING GAME ---- \n")
 
 play = input("Do you want to play the game(yes/no)? ")
@@ -27,6 +28,10 @@ if play.lower() == "yes":
             continue
         if guess == random_number:
             print(f"Random number is {random_number}")
+
+            for i in range (3,0,-1):
+                print(i)
+                time.sleep(1)
             print(f"Congrats! You got it correct.")
             break
         else:
