@@ -29,3 +29,4 @@ class Microwave:
 
 njie = Microwave("Njie wave", "100W")
 
+
