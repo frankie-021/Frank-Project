@@ -15,32 +15,35 @@ while(1):
                 print("Login successfully!\n")
 
                 import time
-                for i in range(5, 0, -1):
+                for i in range(3, 0, -1):
                     print(i)
                     time.sleep(1)
-                print("\n\nRAMADAN KAREEM!\n\n")
+                print("\n\n--- WELCOME! ---\n\n")
 
-                print("Hello world! Welcome to the python world")
+                print("Welcome to the python world")
 
-                is_student = True
-                name = input(str("Enter your name: \n"))
-                age = input("Enter your age: \n")
-                gpa = input("Enter your name: \n")
-                #age = float(age)
 
-                if is_student:
+                is_student = input("Are you a student(yes/no)? ")
+                
+                if is_student == "yes":
 
-                    print(f"hello {name}. You are {age} years old. \nAre you a student? {is_student}, Your GPA is {gpa}.")
+                    name = input(str("Enter your name: \n"))
+                    age = input("Enter your age: \n")
+                    mark = int(input("Enter your grade in percentage: \n"))
+                    gpa = (mark/100) * (4)
+                    gpa = float(gpa)
+                    #age = float(age)
+
+                    print(f"hello {name}. You are {age} years old. Your GPA is {gpa}.")
 
                 else:
                     print("Sorry! This is only for students") 
 
-
-                print(type(name), "\n", type(age), "\n", type(gpa), "\n", type(is_student)) 
+                print("\n\n", type(name), "\n", type(age), "\n", type(gpa), "\n", type(is_student)) 
                 break
 
             else:
-               print("Error! try again\n") 
+               print("Invalid! try again\n") 
         break
     else:
         print("Error! Password does not match.\n")

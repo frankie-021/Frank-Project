@@ -1,5 +1,8 @@
-"""print(f"Your name is {name}")
 
+name = input("Hello! What is your name? ")
+age = int(input("How old are you? "))
+
+print(f"Your name is {name}")
 print(f"Your age is {age}\n\n")
 
 if age > 18:
@@ -7,7 +10,7 @@ if age > 18:
 elif age < 0:
     print("Invalid! Are you kidding me :( ")
 else:
-    print("You are still a child. you are not eligible to vote for the comming elections.") """
+    print("You are still a child. you are not eligible to vote for the comming elections.")
 
 
 
